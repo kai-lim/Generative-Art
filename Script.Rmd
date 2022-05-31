@@ -1,0 +1,28 @@
+---
+title: "Generative_art"
+author: "Kai Lim"
+date: "12/03/2022"
+output: html_document
+---
+
+# use the package "aRtsy"
+
+```{r setup, include=FALSE}
+library(aRtsy)
+set.seed(51366)
+pic<-canvas_flow(colors = colorPalette("origami"),lwd=3, iterations=100)
+saveCanvas(pic, filename = "pic.png")
+
+```
+
+
+# second paitning on 31st May 2022
+```{r second painting}
+set.seed(31522)
+pic2<-canvas_recaman(colors = colorPalette("dark2"),start=0.01,background="black",
+                     iterations=2000,size=3,increment=1.5,
+                     curvature=15,angle=45,closed=TRUE)
+pic2
+saveCanvas(pic2, filename = "pic2.png")
+```
+
