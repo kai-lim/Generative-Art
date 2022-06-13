@@ -16,7 +16,7 @@ saveCanvas(pic, filename = "pic.png")
 ```
 
 
-# second paitning on 31st May 2022
+# second painting on 31st May 2022
 ```{r second painting}
 set.seed(31522)
 pic2<-canvas_recaman(colors = colorPalette("dark2"),start=0.01,background="black",
@@ -24,5 +24,13 @@ pic2<-canvas_recaman(colors = colorPalette("dark2"),start=0.01,background="black
                      curvature=15,angle=45,closed=TRUE)
 pic2
 saveCanvas(pic2, filename = "pic2.png")
+```
+
+# third painting, 13 June 2022
+```{r 3rd-painting}
+set.seed(13622)
+pic3<-canvas_mosaic(colors = colorPalette("dark2"))
+pic3
+saveCanvas(pic3, filename = "pic3.png")
 ```
 
